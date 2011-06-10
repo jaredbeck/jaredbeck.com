@@ -2,9 +2,15 @@ class HomeController < ApplicationController
 
   def index
     @links = []
-    @links << 'http://www.facebook.com/jaredowenbeck'
-    @links << 'http://github.com/jaredbeck'
-    @links << 'http://www.singlebrook.com'
+    @links << link_hash('facebook', 'http://www.facebook.com/jaredowenbeck')
+    @links << link_hash('github', 'http://github.com/jaredbeck')
+    @links << link_hash('singlebrook', 'http://www.singlebrook.com')
+  end
+
+private
+
+  def link_hash(t,u)
+    { :text => t, :url => u }
   end
 
 end

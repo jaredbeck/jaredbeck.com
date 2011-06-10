@@ -1,4 +1,3 @@
-%h1 Jared Beck
 %ul
-  - @links.each do |l|
-    %li= link_to l,l
+  - @links.each do |lnk|
+    %li= link_to lnk[:text], lnk[:url]
