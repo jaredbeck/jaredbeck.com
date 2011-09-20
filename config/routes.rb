@@ -1,4 +1,6 @@
 Jaredbeck::Application.routes.draw do
+  resources :articles
+
   get "home/index"
 
   root :to => "home#index"

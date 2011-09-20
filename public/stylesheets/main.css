@@ -65,3 +65,7 @@ p, span, div {
   text-align: center; }
   .link-container img {
     border: none; }
+
+.field {
+	padding: 10px 0px;
+}

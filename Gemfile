@@ -7,3 +7,4 @@ gem 'haml'
 gem 'haml-rails', :group => :development 
 gem 'sqlite3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'bluecloth' # markdown
