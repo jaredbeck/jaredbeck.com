@@ -66,6 +66,18 @@ p, span, div {
   .link-container img {
     border: none; }
 
-.field {
-	padding: 10px 0px;
-}
+/* The basic flow of simple textual elements */
+p, h2, .field {
+  padding: 5px 0px; }
+
+/* Rails flash */
+.flashes {
+  padding: 5px 0px; }
+  .flashes p {
+    padding: 0; }
+
+.notice {
+  background-color: lightgreen; }
+
+.alert {
+  background-color: yellow; }
