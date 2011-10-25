@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 
     respond_to do |format|
-      format.html { render :layout => false }
+      format.html
       format.json { render json: @article }
     end
   end

@@ -1,0 +1,5 @@
+h2 = User.model_name.pluralize.downcase
+table
+  - @users.each do |u|
+    tr
+      td = link_to u.email, u

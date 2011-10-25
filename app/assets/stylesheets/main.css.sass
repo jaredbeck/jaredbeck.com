@@ -1,25 +1,48 @@
-/* Font Families */
+/* Font Families.  Only font-family rules in this section. */
 h1, h2, h3, h4, h5, h6, legend, th
   font-family: Helvetica, sans-serif
 body, td, p, span, div, li, hr, blockquote
   font-family: Times, serif
 
-/* Basic font sizing */
+/* Basic font sizing.  Only font-size rules in this section. */
 h1
   font-size: 64px
-  margin: 10px 0px
 p, span, div
   font-size: 16px
+input
+  font-size: 14px
+
+/* Basic colors */
+$magenta: #FF40FF
+$green: #00F900
+$blue: #00FDFF
+$yellow: #FFFC00
+$red: #FF2600
+
+/* Link colors */
+a, a:visited
+  color: $red
+a:hover
+  color: black
 
 /* Layout */
 body
   margin: 10px
+h1
+  margin: 10px 0px
+  a, a:visited
+    color: black
+    text-decoration: none
 .portrait
   padding-top: 10px
 .links
   display: inline
   a
     padding-right: 5px
+
+/* Railsy forms */
+.actions, .field
+  margin: 10px 0px
 
 /* Rails flash */
 .flashes
@@ -31,3 +54,8 @@ body
   background-color: lightgreen
 .alert
   background-color: yellow
+
+/* Styling for elements used semanticly, ie. not for solely for layout */
+table.semantic
+  th, td
+    padding: 0px 5px

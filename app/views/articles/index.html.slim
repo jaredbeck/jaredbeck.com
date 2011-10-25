@@ -1,0 +1,15 @@
+h2 = Article.model_name.pluralize.downcase
+
+table.semantic
+  - @articles.each do |a|
+    tr
+      td= a.created_at.to_date
+      td= link_to a.title, a
+      td= truncate a.body, :length => 100, :separator => ' ', :omission => ' ..'
+      - if user_signed_in?
+        td= link_to 'edit', edit_article_path(a)
+        td= link_to 'delete', a, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'new article', new_article_path

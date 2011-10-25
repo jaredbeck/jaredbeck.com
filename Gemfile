@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails'
 gem 'jquery-rails'
 gem 'haml'
+gem 'slim'
 gem 'bluecloth' # markdown
 gem 'devise' # authentication
 
