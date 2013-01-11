@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails'
+gem 'rails', '~> 3.1.1'
 gem 'jquery-rails'
-gem 'haml'
+gem 'haml', '~> 3.1.3'
 gem 'slim'
 gem 'bluecloth' # markdown
-gem 'devise' # authentication
+gem 'devise', '~> 1.4.9'
 
 group :production do
   gem 'pg'
