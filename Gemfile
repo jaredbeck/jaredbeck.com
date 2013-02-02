@@ -7,6 +7,7 @@ gem 'slim'
 gem 'bluecloth' # markdown
 gem 'devise', '~> 1.4.9'
 gem 'pg'
+gem 'thin'
 
 group :development, :test do
   gem 'haml-rails'
