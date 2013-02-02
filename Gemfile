@@ -9,7 +9,17 @@ gem 'devise'
 gem 'pg'
 gem 'thin'
 
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'spork', '~> 1.0rc'
+  gem 'rb-fsevent', '~> 0.9.1'
+end
+
 group :development, :test do
+  gem 'factory_girl'
+  gem 'rspec-rails'
   gem 'haml-rails'
 end
 
@@ -19,9 +29,4 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-end
-
-group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
 end
