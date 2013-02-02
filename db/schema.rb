@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111025053202) do
+ActiveRecord::Schema.define(:version => 20130202063225) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -21,14 +21,15 @@ ActiveRecord::Schema.define(:version => 20111025053202) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                              :default => "", :null => false
-    t.string   "encrypted_password",  :limit => 128, :default => "", :null => false
+    t.string   "email",                                 :default => "", :null => false
+    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
     t.datetime "remember_created_at"
-    t.integer  "failed_attempts",                    :default => 0
+    t.integer  "failed_attempts",                       :default => 0
     t.string   "unlock_token"
     t.datetime "locked_at"
-    t.datetime "created_at",                                         :null => false
-    t.datetime "updated_at",                                         :null => false
+    t.datetime "created_at",                                            :null => false
+    t.datetime "updated_at",                                            :null => false
+    t.datetime "reset_password_sent_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
