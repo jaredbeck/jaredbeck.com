@@ -10,20 +10,19 @@ html
       = link_to "jared beck", root_path
     .links
       - @links.each do |l|
+        = l[:pre]
         a href=l[:url] title=l[:text]
           = image_tag "icon/square32/" + l[:text] + ".png", :alt => l[:text]
 
     = yield
-      
+
     .flashes
       - if notice.present?
         span.notice= notice
       - if alert.present?
         span.alert= alert
-    
+
     .footer
-      = link_to Article.model_name.pluralize.downcase, articles_path
-      br
       - if user_signed_in?
         = link_to "logout", destroy_user_session_path, :method => :delete
       - else
