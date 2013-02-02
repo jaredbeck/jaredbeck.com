@@ -6,15 +6,10 @@ gem 'haml'
 gem 'slim'
 gem 'bluecloth' # markdown
 gem 'devise', '~> 1.4.9'
-
-group :production do
-  gem 'pg'
-end
+gem 'pg'
 
 group :development, :test do
   gem 'haml-rails'
-  gem 'sqlite3'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 # Gems used only for assets and not required

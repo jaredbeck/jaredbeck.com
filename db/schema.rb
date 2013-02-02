@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(:version => 20111025053202) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
-    t.text     "body",       :limit => 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text     "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(:version => 20111025053202) do
     t.integer  "failed_attempts",                    :default => 0
     t.string   "unlock_token"
     t.datetime "locked_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                         :null => false
+    t.datetime "updated_at",                                         :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
