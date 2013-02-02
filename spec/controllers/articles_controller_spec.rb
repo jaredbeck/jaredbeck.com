@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe ArticlesController do
+  render_views
+
   describe '#index' do
     it 'succeeds' do
       get :index
