@@ -4,6 +4,7 @@ development:
   database: jaredbeck_development
   pool: 5
   timeout: 5000
+  min_messages: warning
 
 test:
   adapter: postgresql
@@ -11,3 +12,4 @@ test:
   database: jaredbeck_test
   pool: 5
   timeout: 5000
+  min_messages: warning
