@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails'
 gem 'jquery-rails'
-gem 'haml'
 gem 'slim'
 gem 'bluecloth' # markdown
 gem 'devise'
@@ -20,7 +19,6 @@ end
 group :development, :test do
   gem 'factory_girl'
   gem 'rspec-rails'
-  gem 'haml-rails'
 end
 
 # Gems used only for assets and not required
