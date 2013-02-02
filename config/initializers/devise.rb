@@ -14,9 +14,6 @@ Devise.setup do |config|
   # ==> Configuration for :database_authenticatable
   config.stretches = Rails.env.test? ? 1 : 10
 
-  # ==> Configuration for :rememberable
-  config.use_salt_as_remember_token = true
-
   # ==> Configuration for :recoverable
   config.reset_password_within = 2.hours
 

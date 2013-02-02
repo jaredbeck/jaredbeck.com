@@ -5,7 +5,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'slim'
 gem 'bluecloth' # markdown
-gem 'devise', '~> 2.0.0'
+gem 'devise'
 gem 'pg'
 gem 'thin'
 
