@@ -9,6 +9,10 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'slim'
 gem 'thin'
+gem 'foreman'
+
+# https://devcenter.heroku.com/articles/rails-integration-gems
+gem 'rails_12factor'
 
 group :development do
   gem 'guard'
