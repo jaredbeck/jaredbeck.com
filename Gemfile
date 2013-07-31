@@ -15,7 +15,6 @@ group :development do
   gem 'guard-spork'
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'spork', '~> 1.0rc'
-
 end
 
 group :development, :test do

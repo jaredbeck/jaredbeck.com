@@ -1,4 +1,4 @@
-h2 = Article.model_name.pluralize.downcase
+h2 = Article.model_name.to_s.pluralize.downcase
 
 table.semantic
   - @articles.each do |a|

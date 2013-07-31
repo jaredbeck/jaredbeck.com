@@ -2,6 +2,11 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Jaredbeck::Application.config.secret_token = 'd5846635df69a275e4eeea50d72b2633c7386e8723113c096cf3db99a685d9c91d970000f45b6794342a7e6d774973768b80220ed7d3805f0da51538d7ae5d62'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+Jaredbeck::Application.config.secret_key_base = '4fa751dbb111b1d5ffb191852c82549b715cc12bf35d9946153c196dc3eb181e7139b39eb71b0583fdaf50c998d308141a0cec98841538ee5bcdc410beac682d'
