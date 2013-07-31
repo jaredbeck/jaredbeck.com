@@ -10,9 +10,11 @@ html
       = link_to "jared beck", root_path
     .links
       - @links.each do |l|
-        = l[:pre]
-        a href=l[:url] title=l[:text]
-          = image_tag "icon/square32/" + l[:text] + ".png", :alt => l[:text]
+        .link
+          a href=l[:url] title=l[:text]
+            = image_tag "icon/square32/" + l[:text] + ".png", :alt => l[:text]
+            br
+            .vertical-link-text= l.fetch(:text)
 
     = yield
 

@@ -4,10 +4,13 @@ class ApplicationController < ActionController::Base
 
   def define_links_for_header
     @links = [
-      { text: 'singlebrook', pre: 'works at', url: 'http://www.singlebrook.com' },
-      { text: 'github', pre: 'codes on', url: 'https://github.com/jaredbeck'},
-      { text: 'stackoverflow', pre: 'thanks heaven for', url: 'http://stackoverflow.com/users/567762/jared-beck'},
-      { text: 'facebook', pre: 'still not sure about', url: 'https://www.facebook.com/jaredowenbeck' }
+      { text: 'singlebrook', url: 'http://www.singlebrook.com' },
+      { text: 'github', url: 'https://github.com/jaredbeck'},
+      { text: 'stackoverflow', url: 'http://stackoverflow.com/users/567762/jared-beck'},
+      { text: 'facebook', url: 'https://www.facebook.com/jaredowenbeck' },
+      { text: 'twitter', url: 'https://twitter.com/jaredowenbeck' },
+      { text: 'medium', url: 'https://medium.com/@jaredowenbeck' },
+      { text: 'blogspot', url: 'http://building-a-canoe.blogspot.com' }
     ]
   end
 end
