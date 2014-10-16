@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe ArticlesController do
+RSpec.describe ArticlesController do
   render_views
 
   describe '#index' do
