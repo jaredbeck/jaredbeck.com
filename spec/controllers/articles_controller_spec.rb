@@ -6,8 +6,8 @@ describe ArticlesController do
   describe '#index' do
     it 'succeeds' do
       get :index
-      response.should be_success
-      assigns(:articles).should_not be_nil
+      expect(response).to be_success
+      expect(assigns(:articles)).to_not be_nil
     end
   end
 
@@ -19,7 +19,7 @@ describe ArticlesController do
     describe '#new' do
       it 'succeeds' do
         get :new
-        response.should be_success
+        expect(response).to be_success
       end
     end
 
@@ -28,8 +28,8 @@ describe ArticlesController do
         expect {
           post :create, article: attributes_for(:article)
         }.to change { Article.count }.by(+1)
-        assigns(:article).should_not be_nil
-        response.should redirect_to article_path(assigns(:article))
+        expect(assigns(:article)).to_not be_nil
+        expect(response).to redirect_to article_path(assigns(:article))
       end
     end
 
@@ -37,9 +37,9 @@ describe ArticlesController do
       it 'renders show and assigns an article' do
         a = create :article
         get :show, id: a.id
-        response.should be_success
-        response.should render_template :show
-        assigns(:article).should_not be_nil
+        expect(response).to be_success
+        expect(response).to render_template :show
+        expect(assigns(:article)).to_not be_nil
       end
     end
 
@@ -47,9 +47,9 @@ describe ArticlesController do
       it 'renders edit and assigns an article' do
         a = create :article
         get :edit, id: a.id
-        response.should be_success
-        response.should render_template :edit
-        assigns(:article).should_not be_nil
+        expect(response).to be_success
+        expect(response).to render_template :edit
+        expect(assigns(:article)).to_not be_nil
       end
     end
 
@@ -59,8 +59,8 @@ describe ArticlesController do
         expect {
           put :update, id: a.id, article: {title: 'bananas'}
         }.to change { a.reload.title }.from('kiwis').to('bananas')
-        assigns(:article).should_not be_nil
-        response.should redirect_to article_path(assigns(:article))
+        expect(assigns(:article)).to_not be_nil
+        expect(response).to redirect_to article_path(assigns(:article))
       end
     end
 
@@ -70,7 +70,7 @@ describe ArticlesController do
         expect {
           delete :destroy, id: a.id
         }.to change { Article.count }.by(-1)
-        response.should redirect_to articles_path
+        expect(response).to redirect_to articles_path
       end
     end
   end

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.3'
 
-gem 'rails'
+gem 'rails', '4.2.0.beta2'
 
 gem 'bluecloth' # markdown
 gem 'devise'
@@ -16,14 +16,6 @@ group :production do
   gem 'rails_12factor'
 end
 
-group :development do
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'guard-spork'
-  gem 'rb-fsevent', '~> 0.9.1'
-  gem 'spork', '~> 1.0rc'
-end
-
 group :development, :test do
   gem 'factory_girl'
   gem 'rspec-rails'
@@ -33,6 +25,6 @@ end
 # in production environments by default.
 group :assets do
   gem 'coffee-rails'
-  gem 'sass-rails'
+  gem 'sass-rails', '5.0.0.beta1'
   gem 'uglifier'
 end
