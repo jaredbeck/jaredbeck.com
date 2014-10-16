@@ -16,7 +16,8 @@ html
             br
             .vertical-link-text= l.fetch(:text)
 
-    = yield
+    .main
+      = yield
 
     .flashes
       - if notice.present?

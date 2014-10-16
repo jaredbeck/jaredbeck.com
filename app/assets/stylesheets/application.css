@@ -2,4 +2,5 @@
 *= require "normalize"
 *= require "articles"
 *= require "main"
+*= require "sessions"
 */
