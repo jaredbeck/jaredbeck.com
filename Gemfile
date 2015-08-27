@@ -1,30 +1,22 @@
 source 'https://rubygems.org'
 ruby '2.2.3'
 
-gem 'rails'
-
-gem 'bluecloth' # markdown
+gem 'bluecloth'
 gem 'devise'
+gem 'dotenv'
 gem 'jquery-rails'
 gem 'pg'
+gem 'rails'
+gem 'sass-rails'
 gem 'slim'
 gem 'thin'
-gem 'dotenv'
+gem 'uglifier'
 
 group :production do
-  # https://devcenter.heroku.com/articles/rails-integration-gems
   gem 'rails_12factor'
 end
 
 group :development, :test do
   gem 'factory_girl'
   gem 'rspec-rails'
-end
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'coffee-rails'
-  gem 'sass-rails'
-  gem 'uglifier'
 end
