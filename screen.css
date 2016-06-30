@@ -33,13 +33,32 @@ h1 { margin: 10px 0px; }
   left: 10px;
 }
 .footer a { font-size: 24px; }
-
-.vertical-link-text {
+.projects {
+  width: 316px;
+}
+.projects-big {
+  margin-top: 20px;
+}
+.projects-small {
+  margin-top: 0px;
+}
+.projects p, .projects a {
+  text-align: justify;
+  word-break: break-all;
+}
+.projects-big p, .projects-big a {
   font-size: 24px;
-  position: relative;
-  top: 20px;
-  left: 10px;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+}
+.projects-small p, .projects-small a {
+  font-size: 20px;
+}
+.jp {
+  font-family: "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro",
+    Osaka,
+    "メイリオ",
+    Meiryo,
+    "ＭＳ Ｐゴシック",
+    "MS PGothic",
+    sans-serif;
 }
